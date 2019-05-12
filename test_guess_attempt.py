@@ -18,3 +18,5 @@ def test_guess_attempt_interface_miss():
 def test_guess_attempt_cant_be_both_hit_and_miss():
     with pytest.raises(InvalidGuessAttempt):
         attempt = GuessAttempt('x', miss=True, hit=True)
+        
+print('All passed')
